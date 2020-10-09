@@ -13,6 +13,7 @@ pip install -qr requirements.txt  # install dependencies
 2.make your own data
 
 製作資料夾放影像、xml資料夾像下面這樣
+
 xml製作:https://github.com/tzutalin/labelImg 
 ```bash
 #訓練資料
