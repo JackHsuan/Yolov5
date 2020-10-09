@@ -2,6 +2,7 @@
 tutorial of training yolov5 with some helpful tools in my experiment
 
 1.clone yolov5
+
 python>=3.8 Pytorch>=1.6 
 ```bash
 git clone https://github.com/ultralytics/yolov5  # clone repo
@@ -10,6 +11,7 @@ cd yolov5
 pip install -qr requirements.txt  # install dependencies
 ```
 2.make your own data
+
 製作資料夾放影像、xml資料夾像下面這樣
 xml製作:https://github.com/tzutalin/labelImg 
 ```bash
@@ -23,6 +25,7 @@ dataset/test_anno/{xml檔案}
 dataset/train_txt/{圖片+txt} #yolo資料集後面會製作
 ```
 3.yaml
+
 製作data.yaml放在dataset內
 ```bash
 train: ./yolov5_config/train_data.txt #裡面存放dataset/train_txt/圖片路徑
@@ -35,9 +38,13 @@ nc: 3
 names:['A','B','C']
 ```
 3.利用image_aug.ipynb 製作Yolov5資料集
+
 將image_aug.ipynb放在yolob5資料夾內
+
 利用 1_labels_to_yolo_format 製作yolo資料集
+
 利用 2_split_train_test:將圖片路徑寫入txt 製作yaml內的train.txt、val.txt、test.txt
+
 製作anchors 將anchor產生的資料填入models/yolov5s.yaml
 
 4.開始訓練
