@@ -1,2 +1,2 @@
 # Yolov5
-tutorial of yolov5 in my experiment
+tutorial of training yolov5 with some helpful tools in my experiment
