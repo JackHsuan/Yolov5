@@ -11,10 +11,11 @@ pip install -qr requirements.txt  # install dependencies
 ```
 2.make your own data
 製作資料夾放影像、xml資料夾像下面這樣
+xml製作:https://github.com/tzutalin/labelImg 
 ```bash
 #訓練資料
-dataset/train_img/{圖片}
-dataset/train_anno/{xml檔案}
+dataset/train_img/{圖片} #001.jpg 002.jpg...XXX.jpg
+dataset/train_anno/{xml檔案} #001.xml 002.xml...XXX.xml
 dataset/train_txt/{圖片+txt} #yolo資料集後面會製作
 #測試資料
 dataset/test_img/{圖片}
