@@ -52,4 +52,12 @@ names:['A','B','C']
 ```bash
 $ python train.py --data ./dataset/data.yaml --cfg yolov5s.yaml --weights '' --batch-size 64
 ```
+5.物件偵測 detect_withMQTT.py
+
+預先載入Yolo模型、tensorflow CNN模型
+
+連線至MQTTserver 訂閱頻道
+
+頻道傳輸圖片(base64格式)後將圖片偵測後透過MQTT回傳偵測結果、圖片
+
 
